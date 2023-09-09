@@ -1,8 +1,9 @@
 import { IsString, IsNotEmpty } from 'class-validator';
 import { Type } from 'class-transformer';
 
-export class CreateBookDto {
+export class updateBookDto {
   @IsNotEmpty()
+  @IsString()
   title: string;
 
   @IsNotEmpty()
